@@ -19,7 +19,7 @@ Simulating the Internet involves creating realistic network topologies and using
 
 A significant challenge in studying BGP dynamics is creating a realistic simulation environment that accurately reflects the Internet's topology ([read more about the shape of the Internet using my previous blogpost](https://paradoxicalbit.com/posts/What-Internet-Looks-Like/)). I explored various network topology generators, each with its own strengths and limitations. Here’s a brief overview of the tools I examined and my custom algorithm developed for this purpose.
 
-### **BRITE (Boston university Representative Internet Topology gEnerator) by Medina et al. **:
+### **BRITE (Boston university Representative Internet Topology gEnerator) by Medina et al.**:
 
 This tool utilizes two main methods to generate the network topology.
 
@@ -70,4 +70,5 @@ Simulating the Internet is a complex task, but with the right tools and approach
 
 ## Simulation Environment
 
-WIP :)
+I used the [Mini-Internet Project](https://github.com/nsg-ethz/mini_internet_project) by Holterbach et al. due to its high customizability and open-source nature. This project utilizes docker containers for ASes and employs Open vSwitches and FRRouting to deploy switches and routers within the topology. It also has a looking-glass service that provides access to updated routing tables across the topology, which can be used to automate data collection.
+Hardware used was a Virtual Machine running an Ubuntu 20.04 instance with 16GB RAM, 4 CPU cores, and 40GB storage.
