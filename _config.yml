@@ -1,82 +1,36 @@
 # The Site Configuration
 
-# Import the theme
 theme: jekyll-theme-chirpy
-
-# The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
-# If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
-# otherwise, the layout language will use the default value of 'en'.
 lang: en
+timezone: America/Chicago
 
-# Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
-timezone:
-
-# jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
-# ↓ --------------------------
-
-title: ParadoxicalBit # the main title
-
-tagline: Challenging Reality. Bit by Bit. # it will display as the sub-title
-
-description: >- # used by seo meta and the atom feed
-  A cybersecurity blog by a cybersecurity person.
-
-# Fill in the protocol & hostname for your site.
-# e.g. 'https://username.github.io', note that it does not end with a '/'.
+title: ParadoxicalBit
+tagline: Challenging Reality. Bit by Bit.
+description: >-
+  ParadoxicalBit is a cybersecurity‑focused blog. It aims to demystify cybersecurity by breaking down complex topics into accessible, practical explanations. It serves both beginners and professionals, offering guidance on personal digital safety and organizational security.
 url: "https://www.paradoxicalbit.com"
-
 github:
-  username: ms1450 # change to your github username
-
-#twitter:
-#  username: twitter_username # change to your twitter username
+  username: not-mehul
 
 social:
-  # Change to your full name.
-  # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: Mehul Sen
-  email: mehulsen@mail.rit.edu # change to your email address
+  email: contact@mehulsen.com
   links:
-    # The first element serves as the copyright owner's link
-    # - https://twitter.com/username # change to your twitter homepage
-    - https://github.com/ms1450 # change to your github homepage
-    # Uncomment below to add more social links
-    # - https://www.facebook.com/username
+    - https://mehulsen.com
+    - https://github.com/not-mehul
     - https://www.linkedin.com/in/mehulsen
-
-google_site_verification: # fill in to your verification string
 
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
 
-google_analytics:
-  id: # fill in your Google Analytics ID
-
-goatcounter:
-  id: # fill in your Goatcounter ID
-
-# Prefer color scheme setting.
-#
-# Note: Keep empty will follow the system prefer color by default,
-# and there will be a toggle to switch the theme between dark and light
-# on the bottom left of the sidebar.
-#
-# Available options:
-#
-#     light  - Use the light color scheme
-#     dark   - Use the dark color scheme
-#
 theme_mode: # [light | dark]
 
 # The CDN endpoint for images.
 # Notice that once it is assigned, the CDN url
 # will be added to all image (site avatar & posts' images) paths starting with '/'
 #
-# e.g. 'https://cdn.com'
-img_cdn:
-
 # the avatar on sidebar, support local or CORS resources
-avatar: '/assets/img/paradoxical-bit.png'
+avatar: "/assets/img/paradoxicalBit.png"
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
@@ -174,6 +128,7 @@ defaults:
 
 sass:
   style: compressed
+  quiet_deps: true
 
 compress_html:
   clippings: all
